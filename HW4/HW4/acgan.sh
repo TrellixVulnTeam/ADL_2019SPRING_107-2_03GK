@@ -1,0 +1,2 @@
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=14KoqH_rugK2_oRFVXMm6hPOEpnVz0WU-' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=14KoqH_rugK2_oRFVXMm6hPOEpnVz0WU-" -O G_model.ckpt
+python3 acgan.py --label_dir $1 --output_dir $2
